@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutbase"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".DetalheTodoActivity">
+
+    <TextView
+        android:id="@+id/textviewtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#BA0909"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <CheckBox
+        android:id="@+id/cbCompleted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:checked="false"
+        android:text="Completado" />
+</LinearLayout>

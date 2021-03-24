@@ -11,7 +11,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="cliqueBt"
+        android:onClick="cliquePessoa"
         android:text="@string/bt_ok"
         app:backgroundTint="@color/teal_200"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,9 +26,18 @@
         android:inputType="textPersonName"
         android:text="Name" />
 
-    <TextView
-        android:id="@+id/tv_todos"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPrincipal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="#CDDC39">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSecundario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3" />
 
 </LinearLayout>
